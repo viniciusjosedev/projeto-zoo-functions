@@ -1,5 +1,5 @@
 const data = require('../data/zoo_data');
-// teste
+
 function countEntrants(entrants) {
   // seu código aqui
 }
