@@ -25,4 +25,7 @@ describe('Testes da função HandlerElephants', () => {
   it('Verifica se retorna null quando o valor passado não existe', () => {
     expect(handlerElephants('a')).toEqual(null);
   });
+  it('Verifica se retorna o valor certo;', () => {
+    expect(handlerElephants('averageAge')).toEqual(10.5);
+  });
 });
