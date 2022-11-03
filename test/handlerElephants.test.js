@@ -8,8 +8,10 @@ describe('Testes da função HandlerElephants', () => {
     expect(handlerElephants()).toEqual(undefined);
   });
   it('Verifica se emite uma mensagem sobre o valor passado ser diferente de uma string', () => {
-    expect(handlerElephants(12)).toEqual('Parâmetro inválido, é necessário uma string');
-    expect(handlerElephants(14)).toEqual('Parâmetro inválido, é necessário uma string');
+    const resultado = 'Parâmetro inválido, é necessário uma string';
+    expect(handlerElephants(12)).toEqual(resultado);
+    expect(handlerElephants(14)).toEqual(resultado);
+    expect(handlerElephants(14)).toEqual(resultado);
   });
   it('Verifica se o valor passado é uma chave existente no objeto', () => {
     expect(handlerElephants('name')).toEqual('elephants');
