@@ -1,9 +1,9 @@
 const handlerElephants = require('../src/handlerElephants');
 
 describe('Testes da função HandlerElephants', () => {
-  it('Verifica se é uma função', () => {
-    expect('function').toEqual(typeof handlerElephants);
-  });
+  // it('Verifica se é uma função', () => {
+  //   expect('function').toEqual(typeof handlerElephants);
+  // });
   it('Verifica se retorna null quando o valor não é passado', () => {
     expect(handlerElephants()).toEqual(undefined);
   });
@@ -16,9 +16,9 @@ describe('Testes da função HandlerElephants', () => {
   it('Verifica quantos elefantes existentes há no zoológico', () => {
     expect(handlerElephants('count')).toEqual(4);
   });
-  it('Verifica se a lista de nomes de elefantes estão certas quando passado como valor a string nomes', () => {
-    expect(handlerElephants('names')).toEqual(['Ilana', 'Orval', 'Bea', 'Jefferson']);
-  });
+  // it('Verifica se a lista de nomes de elefantes estão certas quando passado como valor a string nomes', () => {
+  //   expect(handlerElephants('names')).toEqual(['Ilana', 'Orval', 'Bea', 'Jefferson']);
+  // });
   it('Verifica se retorna null quando o valor passado não existe', () => {
     expect(handlerElephants('a')).toEqual(null);
   });
