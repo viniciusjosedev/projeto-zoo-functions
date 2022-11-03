@@ -4,7 +4,6 @@ const weekDays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Satur
 const dayError = 'The day must be valid. Example: Monday';
 
 const isStringRepresentNumber = (string, what) => {
-  console.log(!/^\d+$/.test(string));
   if (!/^\d+$/.test(string)) {
     throw new Error(`The ${what} should represent a number`);
   }
@@ -66,5 +65,3 @@ const getOpeningHours = (day, dataHour) => {
 };
 
 module.exports = getOpeningHours;
-
-console.log(getOpeningHours('monday', '09:56-am'));
