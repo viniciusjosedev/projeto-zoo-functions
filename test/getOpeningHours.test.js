@@ -39,4 +39,8 @@ describe('Testes da função getOpeningHours', () => {
     expect(() => getOpeningHours('day invalid', '09:00-am')).toThrow(/The day must be valid. Example: Monday/);
     expect(() => getOpeningHours('Tuesday', '09:00-am')).not.toThrow(/The day must be valid. Example: Monday/);
   });
+  it('Verifica se apresenta erro quando passado hora/minuto que não existe;', () => {
+    expect(() => getOpeningHours('Tuesday', '15:00-am')).toThrow(/The hour must be between 0 and 12/);
+    expect(() => getOpeningHours('Tuesday', '09:98-am')).toThrow(/The minutes must be between 0 and 59/);
+  });
 });
