@@ -59,6 +59,4 @@ function getAnimalMap(options = undefined) {
   return controller(options);
 }
 
-console.log(getAnimalMap({ includeNames: true, sex: 'female' }));
-
 module.exports = getAnimalMap;
